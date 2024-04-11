@@ -1,8 +1,8 @@
-.InitialScreen {
+.Screens, .Login, .Newuser, .Dietary {
   text-align: center;
 }
 
-.InitialScreen-header {
+.header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,11 +10,33 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #E96040;
-  margin-bottom: 50px;
+}
+.header2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  margin-bottom: 150px;
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+h2{
+  margin-top: 0px;
+  color: black;
+
+}
+
+h3 {
+  margin-top: 0px;
+  color: black;
+  font-weight: normal;
 
 }
 .orange-button {
@@ -32,10 +54,37 @@ h1 {
 }
 
 .clickable-text {
-  color: grey;
+  color: #E96040;
   cursor: pointer;  
   font-size: smaller;
   margin-top: 5px;
   font-weight: semi-bold;
 }
 
+.signup {
+  font-size: 18px;
+  margin: 5px;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+  min-width: 350px;
+  color: black;
+  padding: 10px;
+}
+
+
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.checkbox-item {
+  margin: 10px 0px;
+}
+
+.orangeText {
+  color: #E96040;
+}
