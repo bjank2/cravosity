@@ -1,10 +1,13 @@
 import './App.css';
-import React, {useState} from 'react';
+import React from 'react';
 import Screens from './Screens';
 import LoginScreen from './Login';
 import NewUser from './NewUser';
 import Dietary from './Dietary';
 import Habits from './DiningHabits';
+import GroupDining from './GroupDining';
+import Reserve from './Reserve';
+
 function App() {
   const [currentScreen, setCurrentScreen] = React.useState('Screens');
 
@@ -19,9 +22,10 @@ function App() {
       {currentScreen === 'NewUser' && <NewUser onNavigate={navigate} />}
       {currentScreen === 'Dietary' && <Dietary onNavigate={navigate} />}
       {currentScreen === 'Habits' && <Habits onNavigate={navigate} />}
-
+      {currentScreen === 'GroupDining' && <GroupDining onNavigate={navigate} />}
+      {currentScreen === 'Reserve' && <Reserve onNavigate={navigate} />}
     </div>
-  )
+  );
 }
 
 export default App;

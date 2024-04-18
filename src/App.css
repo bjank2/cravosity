@@ -1,11 +1,9 @@
 .Screens, .Login, .Newuser, .Dietary, .DiningHabits {
   text-align: center;
-  min-height: 20vh;
-
 }
 
 .header {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +18,7 @@
 }
 
 .header3 {
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,21 +27,23 @@
 }
 
 .body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: calc(10px + 2vmin);
   color: black;
 }
 
 h2{
+  margin-top: 0px;
   color: black;
 
 }
 
 h3 {
+  margin-top: 0px;
   color: black;
   font-weight: normal;
 
@@ -90,22 +91,121 @@ h3 {
 } 
 
 .checkbox-item {
-  margin-left: 15px;
-  flex-direction: column;
-  align-items:center;
-  margin: 10px;
-  
+  margin: 10px 0px;
 }
 
 .orangeText {
   color: #E96040;
 }
 
-.radio-item {
-  margin: 10px 0px;
-  margin-left: 10px;
-  flex-direction: column;
-  align-items:center;
-  display: flex;
+.GroupDining {
+  text-align: center;
 }
 
+.GroupDining .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #E96040;
+  color: white;
+}
+
+.GroupDining .user-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.GroupDining .image-container {
+  margin: 0 10px;
+}
+
+.GroupDining .dropdowns {
+  margin-top: 20px;
+}
+
+.GroupDining .orange-dropdown {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+  color: #E96040;
+}
+
+.GroupDining .recommended-restaurants,
+.GroupDining .current-selection {
+  margin-top: 20px;
+}
+
+.GroupDining .restaurant-container {
+  margin-bottom: 10px;
+}
+
+.GroupDining h3,
+.GroupDining h4 {
+  color: #E96040;
+}
+
+.GroupDining .orange-button {
+  background-color: #E96040;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.Reserve {
+  text-align: center;
+  padding: 20px;
+}
+
+.Reserve .restaurant-info {
+  margin-bottom: 20px;
+}
+
+.Reserve .restaurant-info img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.Reserve .form-group {
+  margin-bottom: 20px;
+}
+
+.Reserve label {
+  display: block;
+  margin-bottom: 5px;
+  color: #E96040;
+  font-weight: bold;
+}
+
+.Reserve input,
+.Reserve select {
+  padding: 10px;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.Reserve .orange-button {
+  background-color: #E96040;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 200px;
+}

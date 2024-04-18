@@ -4,7 +4,7 @@ import LoginScreen from './Login';
 import Screens from './Screens';
 import NewUser from './NewUser';
 
-function Habits() {
+function Habits({ onNavigate }) {
   const [allergies, setAllergies] = useState('');
   const [allergyDetails, setAllergyDetails] = useState(''); // New state for allergy details
   const [favoriteFoods, setFavoriteFoods] = useState('');
@@ -36,11 +36,11 @@ function Habits() {
   return (
     <div className="DiningHabits">
       <form>
-        <div className="header2">
+        <div className="header3">
           <h2>A Few More Questions...</h2>
         </div>
         <div className="body">
-          <label className="radio-item">
+          <label className="checkbox-item">
             Do You Have Any Allergies?
             <div>
               <input type="radio" value="Yes" checked={allergies === 'Yes'} onChange={handleAllergiesChange} /> Yes
@@ -48,27 +48,25 @@ function Habits() {
             </div>
           </label>
           {allergies === 'Yes' && (
-            <label className="radio-item">
+            <label className="checkbox-item">
               Please Enter Your Allergies:
               <input type="text" value={allergyDetails} onChange={handleAllergyDetailsChange} />
             </label>
           )}
           {allergies === 'No' && (
-            <label className="radio-item">
+            <label className="checkbox-item">
               What Are Your Favorite Foods?
               <input type="text" value={favoriteFoods} onChange={handleFavoriteFoodsChange} />
             </label>
           )}
-          <label className="radio-item">
+          <label className="checkbox-item">
             Preferred Average Budget:
             <input type="range" min="0" max="2" value={budget} onChange={handleBudgetChange} />
             <div>{['$', '$$', '$$$'][budget]}</div>
           </label>
         </div>
-        <button type="submit" className="orange-button">Done</button>
+        <button type="submit" className="orange-button" onClick={() => onNavigate('GroupDining')}>Done</button>
       </form>
-      <div className="orangeText"> <text><i>2/2</i> </text> </div>
-
     </div>
   );
 }
