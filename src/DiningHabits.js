@@ -36,11 +36,11 @@ function Habits() {
   return (
     <div className="DiningHabits">
       <form>
-        <div className="header3">
+        <div className="header2">
           <h2>A Few More Questions...</h2>
         </div>
         <div className="body">
-          <label className="checkbox-item">
+          <label className="radio-item">
             Do You Have Any Allergies?
             <div>
               <input type="radio" value="Yes" checked={allergies === 'Yes'} onChange={handleAllergiesChange} /> Yes
@@ -48,18 +48,18 @@ function Habits() {
             </div>
           </label>
           {allergies === 'Yes' && (
-            <label className="checkbox-item">
+            <label className="radio-item">
               Please Enter Your Allergies:
               <input type="text" value={allergyDetails} onChange={handleAllergyDetailsChange} />
             </label>
           )}
           {allergies === 'No' && (
-            <label className="checkbox-item">
+            <label className="radio-item">
               What Are Your Favorite Foods?
               <input type="text" value={favoriteFoods} onChange={handleFavoriteFoodsChange} />
             </label>
           )}
-          <label className="checkbox-item">
+          <label className="radio-item">
             Preferred Average Budget:
             <input type="range" min="0" max="2" value={budget} onChange={handleBudgetChange} />
             <div>{['$', '$$', '$$$'][budget]}</div>
@@ -67,6 +67,8 @@ function Habits() {
         </div>
         <button type="submit" className="orange-button">Done</button>
       </form>
+      <div className="orangeText"> <text><i>2/2</i> </text> </div>
+
     </div>
   );
 }

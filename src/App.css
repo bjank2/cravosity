@@ -1,9 +1,11 @@
 .Screens, .Login, .Newuser, .Dietary, .DiningHabits {
   text-align: center;
+  min-height: 20vh;
+
 }
 
 .header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +20,6 @@
 }
 
 .header3 {
-  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,23 +28,21 @@
 }
 
 .body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 18px;
   color: black;
 }
 
 h2{
-  margin-top: 0px;
   color: black;
 
 }
 
 h3 {
-  margin-top: 0px;
   color: black;
   font-weight: normal;
 
@@ -91,9 +90,22 @@ h3 {
 } 
 
 .checkbox-item {
-  margin: 10px 0px;
+  margin-left: 15px;
+  flex-direction: column;
+  align-items:center;
+  margin: 10px;
+  
 }
 
 .orangeText {
   color: #E96040;
 }
+
+.radio-item {
+  margin: 10px 0px;
+  margin-left: 10px;
+  flex-direction: column;
+  align-items:center;
+  display: flex;
+}
+
