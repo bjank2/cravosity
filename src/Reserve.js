@@ -71,6 +71,8 @@ function Reserve({ onNavigate }) {
           </select>
         </div>
         <button type="submit" className="orange-button">
+        <button onClick={() => onNavigate('GroupDining')} className="orange-button">Back</button>
+
           Submit
         </button>
       </form>

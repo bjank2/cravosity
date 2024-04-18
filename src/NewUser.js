@@ -14,6 +14,7 @@ function NewUser({ onNavigate }) {
                 <input type="text" placeholder="Password" className="signup" />
                 <input type="text" placeholder="Confirm Password" className="signup" />
                 <button onClick={() => onNavigate('Dietary')} className="orange-button">Create</button>
+                <button onClick={() => onNavigate('Screens')} className="orange-button">Back</button>
 
             </header>
         </div>

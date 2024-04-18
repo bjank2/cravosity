@@ -66,6 +66,8 @@ function Habits({ onNavigate }) {
           </label>
         </div>
         <button type="submit" className="orange-button" onClick={() => onNavigate('GroupDining')}>Done</button>
+        <button onClick={() => onNavigate('Dietary')} className="orange-button">Back</button>
+
       </form>
     </div>
   );
