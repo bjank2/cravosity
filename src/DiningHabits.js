@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import LoginScreen from './Login';
 import Screens from './Screens';
 import NewUser from './NewUser';
+import './App.css';
 
 function Habits() {
     const [allergies, setAllergies] = useState('');

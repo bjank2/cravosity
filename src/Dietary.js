@@ -2,8 +2,7 @@ import './App.css';
 import React from 'react';
 import LoginScreen from './Login';
 import Screens from './Screens';
-// Initial Screen with 
-function NewUser({ onNavigate }) {
+function Dietary({ onNavigate }) {
 
     return (
         <div className="Dietary">
@@ -33,7 +32,7 @@ function NewUser({ onNavigate }) {
                         <label for="paleo">Paleo</label> </div>
                     <div className="checkbox-item"><input type="checkbox" id="diabetes" name="diabetes" value="diabetes" />
                         <label for="diabetes">Diabetes</label> </div>
-                    <button onClick={() => onNavigate('Next')} className="orange-button">Login</button>
+                    <button onClick={() => onNavigate('Habits')} className="orange-button">Next</button>
                     <div className="orangeText"> <text><i>1/2</i> </text> </div>
                 </div>
             </div>
@@ -42,5 +41,5 @@ function NewUser({ onNavigate }) {
     );
 }
 
-export default NewUser;
+export default Dietary;
 

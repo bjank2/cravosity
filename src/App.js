@@ -4,7 +4,7 @@ import Screens from './Screens';
 import LoginScreen from './Login';
 import NewUser from './NewUser';
 import Dietary from './Dietary';
-
+import Habits from './DiningHabits';
 function App() {
   const [currentScreen, setCurrentScreen] = React.useState('Screens');
 
@@ -18,6 +18,7 @@ function App() {
       {currentScreen === 'LoginScreen' && <LoginScreen onNavigate={navigate} />}
       {currentScreen === 'NewUser' && <NewUser onNavigate={navigate} />}
       {currentScreen === 'Dietary' && <Dietary onNavigate={navigate} />}
+      {currentScreen === 'Habits' && <Habits onNavigate={navigate} />}
 
     </div>
   )
