@@ -302,3 +302,67 @@ h4 {
   color: black;
   text-align: left;
 }
+
+.RestaurantInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.RestaurantInfo .content {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.RestaurantInfo .restaurant-info {
+  margin-bottom: 20px;
+}
+
+.RestaurantInfo .restaurant-info img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.RestaurantInfo .restaurant-info h2 {
+  color: #E96040;
+}
+
+.RestaurantInfo .recommended-menu {
+  margin-top: 20px;
+}
+
+.RestaurantInfo .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.RestaurantInfo .menu-item img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.RestaurantInfo .menu-item h5 {
+  color: #E96040;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.RestaurantInfo .button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.RestaurantInfo .button-container button {
+  flex: 1;
+  margin: 0 10px;
+}

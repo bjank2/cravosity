@@ -43,22 +43,22 @@ function Home({ onNavigate }) {
                 <div className="recommended-section">
                     <h4>Restaurants For You</h4>
                     <div className="restaurant-container">
-                        <div className="restaurant-item">
+                        <div className="restaurant-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Busy Burger', menuItems: ['Impossible Burger'] })}>
                             <img src={require("./images/restaurant1.jpg")} alt="Restaurant 1" />
                             <p>Busy Burger</p>
                         </div>
-                        <div className="restaurant-item">
+                        <div className="restaurant-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Stax Cafe', menuItems: ['Blueberry Pancakes'] })}>
                             <img src={require("./images/restaurant2.png")} alt="Restaurant 2" />
                             <p>Stax Cafe</p>
                         </div>
                     </div>
                     <h4>Dishes Recommended For You</h4>
                     <div className="dish-container">
-                        <div className="dish-item">
+                        <div className="dish-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Busy Burger', menuItems: ['Impossible Burger'] })}>
                             <img src={require("./images/menu1.png")} alt="Dish 1" />
                             <p>Impossible Burger</p>
                         </div>
-                        <div className="dish-item">
+                        <div className="dish-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Stax Cafe', menuItems: ['Blueberry Pancakes'] })}>
                             <img src={require("./images/menu2.png")} alt="Dish 2" />
                             <p>Blueberry Pancakes</p>
                         </div>

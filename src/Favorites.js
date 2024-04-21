@@ -12,22 +12,22 @@ function Favorites({ onNavigate }) {
                 <div className="favorites-section">
                     <h4>Restaurants</h4>
                     <div className="restaurant-container">
-                        <div className="restaurant-item">
+                        <div className="restaurant-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Busy Burger', menuItems: ['Impossible Burger'] })}>
                             <img src={require("./images/restaurant1.jpg")} alt="Favorite Restaurant 1" />
                             <p>Busy Burger</p>
                         </div>
-                        <div className="restaurant-item">
+                        <div className="restaurant-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Stax Cafe', menuItems: ['Blueberry Pancakes'] })}>
                             <img src={require("./images/restaurant2.png")} alt="Favorite Restaurant 2" />
                             <p>Stax Cafe</p>
                         </div>
                     </div>
                     <h4>Dishes</h4>
                     <div className="dish-container">
-                        <div className="dish-item">
+                        <div className="dish-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Busy Burger', menuItems: ['Impossible Burger'] })}>
                             <img src={require("./images/menu1.png")} alt="Favorite Dish 1" />
                             <p>Impossible Burger</p>
                         </div>
-                        <div className="dish-item">
+                        <div className="dish-item" onClick={() => onNavigate('RestaurantInfo', { restaurant: 'Stax Cafe', menuItems: ['Blueberry Pancakes'] })}>
                             <img src={require("./images/menu2.png")} alt="Favorite Dish 2" />
                             <p>Blueberry Pancakes</p>
                         </div>
