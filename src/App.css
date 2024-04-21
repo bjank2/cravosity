@@ -366,3 +366,76 @@ h4 {
   flex: 1;
   margin: 0 10px;
 }
+.MyDiningGroups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.MyDiningGroups .content {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.MyDiningGroups .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.MyDiningGroups .search-bar {
+  margin-bottom: 20px;
+}
+
+.MyDiningGroups .search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+}
+
+.MyDiningGroups .group-list {
+  margin-bottom: 20px;
+}
+
+.MyDiningGroups .group-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.MyDiningGroups .group-item.selected {
+  background-color: #E96040;
+  color: white;
+}
+
+.MyDiningGroups .group-item.selected .group-details p {
+  color: white;
+}
+
+.MyDiningGroups .group-icon {
+  margin-right: 10px;
+}
+
+.MyDiningGroups .group-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.MyDiningGroups .group-details {
+  text-align: left;
+}
+
+.MyDiningGroups .button-container {
+  display: flex;
+  justify-content: space-around;
+}

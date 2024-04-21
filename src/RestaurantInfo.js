@@ -88,7 +88,7 @@ function RestaurantInfo({ onNavigate, selectedRestaurant, selectedMenuItems }) {
                     ))}
                 </div>
                 <div className="button-container">
-                    <button onClick={() => onNavigate('GroupDining')} className="orange-button">Start Dining Group</button>
+                    <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Start Dining Group</button>
                     <button onClick={() => onNavigate('Reserve')} className="orange-button">Reserve Table</button>
                 </div>
             </div>

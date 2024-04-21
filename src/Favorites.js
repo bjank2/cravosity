@@ -33,7 +33,7 @@ function Favorites({ onNavigate }) {
                         </div>
                     </div>
                 </div>
-                <button onClick={() => onNavigate('GroupDining')} className="orange-button">Group Dining</button>
+                <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Group Dining</button>
             </div>
         </div>
     );

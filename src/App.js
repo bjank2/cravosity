@@ -10,6 +10,7 @@ import Reserve from './Reserve';
 import Home from './Home';
 import Favorites from './Favorites';
 import RestaurantInfo from './RestaurantInfo';
+import MyDiningGroups from "./MyDiningGroups";
 
 function App() {
   const [currentScreen, setCurrentScreen] = React.useState('Screens');
@@ -36,6 +37,7 @@ function App() {
                 selectedMenuItems={screenData?.menuItems}
             />
         )}
+        {currentScreen === 'MyDiningGroups' && <MyDiningGroups onNavigate={navigate} />}
         {currentScreen === 'GroupDining' && <GroupDining onNavigate={navigate} />}
         {currentScreen === 'Reserve' && <Reserve onNavigate={navigate} />}
       </div>
