@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function Reserve({ onNavigate }) {
-  const [selectedDate, setSelectedDate] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
-  const [selectedPartySize, setSelectedPartySize] = useState('');
+function Reserve({ onNavigate, selectedRestaurant }) {
+  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedPartySize, setSelectedPartySize] = useState("");
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -20,18 +20,26 @@ function Reserve({ onNavigate }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Date:', selectedDate);
-    console.log('Time:', selectedTime);
-    console.log('Party Size:', selectedPartySize);
+    console.log("Date:", selectedDate);
+    console.log("Time:", selectedTime);
+    console.log("Party Size:", selectedPartySize);
+  };
+
+  const getRestaurantImage = () => {
+    if (selectedRestaurant === "Busy Burger") {
+      return require("./images/restaurant1.jpg");
+    } else if (selectedRestaurant === "Stax Cafe") {
+      return require("./images/restaurant2.png");
+    }
+    return null;
   };
 
   return (
     <div className="Reserve">
       <h2>Make a Reservation</h2>
       <div className="restaurant-info">
-        <img src="/images/restaurant1.jpg" alt="Restaurant" />
-        <h3>Restaurant Name</h3>
-        <p>Restaurant Description</p>
+        <img src={getRestaurantImage()} alt="Restaurant" />
+        <h3>{selectedRestaurant}</h3>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -70,11 +78,22 @@ function Reserve({ onNavigate }) {
             ))}
           </select>
         </div>
-        <button type="submit" className="orange-button">
-        <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
-
-          Submit
-        </button>
+        <div className="button-container">
+          <button
+            onClick={() => onNavigate("GroupDining")}
+            className="orange-button"
+          >
+            Back
+          </button>
+          <button
+            type="button"
+            className="orange-button"
+            disabled={!selectedRestaurant}
+            onClick={() => onNavigate("Rating")}
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
