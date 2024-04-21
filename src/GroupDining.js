@@ -60,7 +60,7 @@ function GroupDining({ onNavigate }) {
       </div>
       <button className="orange-button" onClick={() => onNavigate('Reserve')}>Reserve a Table</button>
     
-      <button onClick={() => onNavigate('Habits')} className="orange-button">Back</button>
+      <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
 </div>
   );
 }

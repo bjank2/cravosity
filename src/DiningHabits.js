@@ -65,7 +65,7 @@ function Habits({ onNavigate }) {
             <div>{['$', '$$', '$$$'][budget]}</div>
           </label>
         </div>
-        <button type="submit" className="orange-button" onClick={() => onNavigate('GroupDining')}>Done</button>
+        <button type="submit" className="orange-button" onClick={() => onNavigate('Home')}>Done</button>
         <button onClick={() => onNavigate('Dietary')} className="orange-button">Back</button>
 
       </form>

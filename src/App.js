@@ -7,6 +7,8 @@ import Dietary from './Dietary';
 import Habits from './DiningHabits';
 import GroupDining from './GroupDining';
 import Reserve from './Reserve';
+import Home from './Home';
+import Favorites from './Favorites';
 
 function App() {
   const [currentScreen, setCurrentScreen] = React.useState('Screens');
@@ -22,6 +24,8 @@ function App() {
       {currentScreen === 'NewUser' && <NewUser onNavigate={navigate} />}
       {currentScreen === 'Dietary' && <Dietary onNavigate={navigate} />}
       {currentScreen === 'Habits' && <Habits onNavigate={navigate} />}
+      {currentScreen === 'Home' && <Home onNavigate={navigate} />}
+      {currentScreen === 'Favorites' && <Favorites onNavigate={navigate} />}
       {currentScreen === 'GroupDining' && <GroupDining onNavigate={navigate} />}
       {currentScreen === 'Reserve' && <Reserve onNavigate={navigate} />}
     </div>

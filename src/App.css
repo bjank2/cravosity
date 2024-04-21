@@ -209,3 +209,96 @@ h3 {
   font-weight: bold;
   min-width: 200px;
 }
+
+.Home,
+.Favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+.restaurant-container,
+.dish-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.restaurant-item,
+.dish-item {
+  text-align: center;
+}
+
+.restaurant-item img,
+.dish-item img {
+  width: 250px;
+  height: auto;
+}
+.Home .orange-dropdown {
+  padding: 10px;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+  color: white;
+  background-color: #E96040;
+  font-size: 15px;
+  font-weight: bold;
+
+
+}
+.Home .search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #E96040;
+  border-radius: 5px;
+}
+
+.Home .dropdown-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.FavButton {
+  background-color: #E96040;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 175px;
+  margin: 40px 60px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 200px;
+}
+h4 {
+  margin-top: 0px;
+  color: #E96040;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0px;
+
+}
+.Home p {
+  font-weight: normal;
+  font-size: 22px;
+  margin: 15px;
+  margin-left: 0px;
+  color: black;
+  text-align: left;
+}
+.Favorites p {
+  font-weight: normal;
+  font-size: 22px;
+  margin: 15px;
+  margin-left: 0px;
+  color: black;
+  text-align: left;
+}
