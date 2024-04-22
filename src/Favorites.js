@@ -5,9 +5,11 @@ function Favorites({ onNavigate }) {
     return (
         <div className="Favorites">
             <div className="content">
-                <header className="header">
-                    <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
-                    <h1>My Favorites</h1>
+                <header className="header2">
+                    <div className="button-center">
+                    <h2>My Favorites</h2>
+
+                    </div>
                 </header>
                 <div className="favorites-section">
                     <h4>Restaurants</h4>
@@ -33,7 +35,11 @@ function Favorites({ onNavigate }) {
                         </div>
                     </div>
                 </div>
+                <div className="button-center">
+                <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
                 <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Group Dining</button>
+
+                </div>
             </div>
         </div>
     );

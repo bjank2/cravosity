@@ -56,12 +56,13 @@ function MyDiningGroups({ onNavigate }) {
           ))}
         </div>
         <div className="button-container">
+        <button onClick={() => onNavigate("Home")} className="orange-button">
+            Cancel
+          </button>
           <button onClick={handleConfirmGroup} className="orange-button">
             Confirm Group
           </button>
-          <button onClick={() => onNavigate("Home")} className="orange-button">
-            Cancel
-          </button>
+
         </div>
       </div>
     </div>

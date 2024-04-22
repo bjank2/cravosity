@@ -36,7 +36,7 @@ function Habits({ onNavigate }) {
   return (
     <div className="DiningHabits">
       <form>
-        <div className="header3">
+        <div className="header2">
           <h2>A Few More Questions...</h2>
         </div>
         <div className="body">
@@ -65,8 +65,10 @@ function Habits({ onNavigate }) {
             <div>{['$', '$$', '$$$'][budget]}</div>
           </label>
         </div>
-        <button type="submit" className="orange-button" onClick={() => onNavigate('Home')}>Done</button>
+        
         <button onClick={() => onNavigate('Dietary')} className="orange-button">Back</button>
+<button type="submit" className="orange-button" onClick={() => onNavigate('Home')}>Done</button>
+<div className="orangeText"> <text><i>2/2</i> </text> </div>
 
       </form>
     </div>

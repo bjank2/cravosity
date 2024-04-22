@@ -61,8 +61,8 @@ function GroupDining({ onNavigate, selectedGroup }) {
           </div>
         ))}
       </div>
-      <p className="orangeText">Our Preferences: [combined preferences]</p>
-      <p className="orangeText">Our Restrictions: [combined allergies]</p>
+      <p className="orangeText">Our Preferences: American, Indian, Italian</p>
+      <p className="orangeText">Our Restrictions: Shellfish allergy, Vegetarian, Keto</p>
       <div className="dropdowns">
         <select
           name="occasion"
@@ -150,6 +150,8 @@ function GroupDining({ onNavigate, selectedGroup }) {
           </div>
         </div>
       )}
+            <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Back</button>
+
       <button
         className="orange-button"
         onClick={() =>
@@ -162,7 +164,6 @@ function GroupDining({ onNavigate, selectedGroup }) {
       >
         Reserve a Table
       </button>
-      <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Back</button>
 
     </div>
   );

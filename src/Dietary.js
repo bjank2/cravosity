@@ -34,11 +34,13 @@ function Dietary({ onNavigate }) {
                         <label for="diabetes">Diabetes</label> </div>
             
                     </div>
+                    <div className="button-container">
                     <button onClick={() => onNavigate('Habits')} className="orange-button">Next</button>
                     <button onClick={() => onNavigate('NewUser')} className="orange-button">Back</button>
+                    
+                    </div>
                     </div>
 
-                    <div className="orangeText"> <text><i>1/2</i> </text> </div>
 
       
       
