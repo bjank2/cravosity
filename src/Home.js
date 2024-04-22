@@ -5,10 +5,11 @@ function Home({ onNavigate }) {
     return (
         <div className="Home">
             <div className="content">
-                <header className="header2">
+                <header className="button-center">
                     <h2>Find Food</h2>
+                    </header>
                     <div className="button-center"> <input type="text" placeholder="Search..." className="signup" />
-                </div></header>
+                </div>
                 <div className="dropdown-section">
                     <select className="orange-dropdown">
                         <option value="">Occasion</option>

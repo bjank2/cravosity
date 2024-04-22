@@ -68,7 +68,6 @@ function Reserve({ onNavigate, selectedRestaurant }) {
           <button
             type="button"
             className="orange-button"
-            disabled={!selectedRestaurant}
             onClick={() => onNavigate("Rating")}
           >
             Submit
