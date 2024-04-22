@@ -4,7 +4,6 @@ import "./App.css";
 function Reserve({ onNavigate, selectedRestaurant }) {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
-  const [selectedPartySize, setSelectedPartySize] = useState("");
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -14,9 +13,7 @@ function Reserve({ onNavigate, selectedRestaurant }) {
     setSelectedTime(event.target.value);
   };
 
-  const handlePartySizeChange = (event) => {
-    setSelectedPartySize(event.target.value);
-  };
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
