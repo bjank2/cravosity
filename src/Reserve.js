@@ -27,7 +27,7 @@ function Reserve({ onNavigate, selectedRestaurant }) {
     } else if (selectedRestaurant === "Stax Cafe") {
       return require("./images/restaurant2.png");
     }
-    return null;
+    return require("./images/generic.jpg");
   };
 
   return (
