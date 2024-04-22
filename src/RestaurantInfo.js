@@ -43,19 +43,15 @@ function RestaurantInfo({ onNavigate, selectedRestaurant, selectedMenuItems }) {
         switch (menuItem) {
             case 'Impossible Burger':
                 return '$9.99\n' +
-                    '.........................................................................................................................................................................................................................................................\n' +
                     'Plant-Based Pattie, Leaf Lettuce, Tomato, Dill Pickle, Red Onion or Grilled Onion, Spicy Busy Sauce Served on Butter Toasted Bun';
             case 'Blueberry Pancakes':
                 return '$12.75\n' +
-                    '.........................................................................................................................................................................................................................................................\n' +
                     'Blueberries Inside, & Blueberry Lemon Compote';
             case 'Cod Fish':
                 return '$7.99\n' +
-                    '.........................................................................................................................................................................................................................................................\n' +
                     'Breaded Cod Fish, Leaf Lettuce, Tomato, Tartar Sauce on a Butter Toasted Bun';
             case 'Nutella & Berry':
                 return '$13.75\n' +
-                    '.........................................................................................................................................................................................................................................................\n' +
                     'Topped With Blueberry, Strawberry, And Banana';
             default:
                 return '';
@@ -67,9 +63,7 @@ function RestaurantInfo({ onNavigate, selectedRestaurant, selectedMenuItems }) {
     return (
         <div className="RestaurantInfo">
             <div className="content">
-                <header className="header">
-                    <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
-                </header>
+
                 <div className="restaurant-info">
                     <img src={getRestaurantImage(selectedRestaurant)} alt="Restaurant" />
                     <h2>{selectedRestaurant}</h2>
@@ -91,6 +85,8 @@ function RestaurantInfo({ onNavigate, selectedRestaurant, selectedMenuItems }) {
                     <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Start Dining Group</button>
                     <button onClick={() => onNavigate('Reserve')} className="orange-button">Reserve Table</button>
                 </div>
+                <button onClick={() => onNavigate('Home')} className="orange-button">Back</button>
+
             </div>
         </div>
     );

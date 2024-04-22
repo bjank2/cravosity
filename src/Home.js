@@ -5,10 +5,10 @@ function Home({ onNavigate }) {
     return (
         <div className="Home">
             <div className="content">
-                <header className="header">
-                    <h1>Find Food</h1>
-                    <input type="text" placeholder="Search..." className="search-bar" />
-                </header>
+                <header className="header2">
+                    <h2>Find Food</h2>
+                    <div className="button-center"> <input type="text" placeholder="Search..." className="signup" />
+                </div></header>
                 <div className="dropdown-section">
                     <select className="orange-dropdown">
                         <option value="">Occasion</option>
@@ -39,7 +39,7 @@ function Home({ onNavigate }) {
                         <option value="3">3 stars</option>
                     </select>
                 </div>
-                <button onClick={() => onNavigate('Favorites')} className="FavButton">My Favorites</button>
+                <div className="button-center"><button onClick={() => onNavigate('Favorites')} className="FavButton">My Favorites</button></div>
                 <div className="recommended-section">
                     <h4>Restaurants For You</h4>
                     <div className="restaurant-container">
@@ -64,7 +64,10 @@ function Home({ onNavigate }) {
                         </div>
                     </div>
                 </div>
+                <div className="button-center">
                 <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Group Dining</button>
+
+                </div>
             </div>
         </div>
     );

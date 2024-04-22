@@ -32,13 +32,16 @@ function Dietary({ onNavigate }) {
                         <label for="paleo">Paleo</label> </div>
                     <div className="checkbox-item"><input type="checkbox" id="diabetes" name="diabetes" value="diabetes" />
                         <label for="diabetes">Diabetes</label> </div>
+            
+                    </div>
                     <button onClick={() => onNavigate('Habits')} className="orange-button">Next</button>
                     <button onClick={() => onNavigate('NewUser')} className="orange-button">Back</button>
+                    </div>
 
                     <div className="orangeText"> <text><i>1/2</i> </text> </div>
 
-                </div>
-            </div>
+      
+      
         </div>
 
     );

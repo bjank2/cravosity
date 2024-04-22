@@ -48,7 +48,7 @@ function GroupDining({ onNavigate, selectedGroup }) {
 
   return (
     <div className="GroupDining">
-      <div className="header">
+      <div className="header2">
         <h2>{selectedGroup ? selectedGroup.name : "Group Name"}</h2>
         <button className="orange-button">Edit Group</button>
       </div>
@@ -162,12 +162,8 @@ function GroupDining({ onNavigate, selectedGroup }) {
       >
         Reserve a Table
       </button>
-      <button
-        onClick={() => onNavigate("MyDiningGroups")}
-        className="orange-button"
-      >
-        Back
-      </button>
+      <button onClick={() => onNavigate('MyDiningGroups')} className="orange-button">Back</button>
+
     </div>
   );
 }

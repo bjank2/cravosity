@@ -22,7 +22,6 @@ function Reserve({ onNavigate, selectedRestaurant }) {
     event.preventDefault();
     console.log("Date:", selectedDate);
     console.log("Time:", selectedTime);
-    console.log("Party Size:", selectedPartySize);
   };
 
   const getRestaurantImage = () => {
@@ -61,22 +60,6 @@ function Reserve({ onNavigate, selectedRestaurant }) {
             onChange={handleTimeChange}
             required
           />
-        </div>
-        <div className="form-group">
-          <label htmlFor="partySize">Party Size:</label>
-          <select
-            id="partySize"
-            value={selectedPartySize}
-            onChange={handlePartySizeChange}
-            required
-          >
-            <option value="">Select party size</option>
-            {[1, 2, 3, 4, 5, 6].map((size) => (
-              <option key={size} value={size}>
-                {size}
-              </option>
-            ))}
-          </select>
         </div>
         <div className="button-container">
           <button

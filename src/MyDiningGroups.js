@@ -24,7 +24,7 @@ function MyDiningGroups({ onNavigate }) {
   return (
     <div className="MyDiningGroups">
       <div className="content">
-        <header className="header">
+        <header className="header2">
           <h2>My Dining Groups</h2>
           <button
             onClick={() => onNavigate("GroupDining")}

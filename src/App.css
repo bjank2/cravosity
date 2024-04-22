@@ -1,9 +1,13 @@
-.Screens, .Login, .Newuser, .Dietary, .DiningHabits {
+.Screens,
+.Login,
+.Newuser,
+.Dietary,
+.DiningHabits {
   text-align: center;
 }
 
 .header {
-  /* min-height: 100vh; */
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,10 +15,27 @@
   font-size: calc(10px + 2vmin);
   color: #E96040;
 }
+
+h1 {
+  margin-bottom: 100px;
+}
+
+
+
+.header .buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .header2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .header3 {
@@ -32,13 +53,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: black;
 }
 
-h2{
-  margin-top: 0px;
+h2 {
+  margin-top: 20px;
   color: black;
+
 
 }
 
@@ -48,23 +70,24 @@ h3 {
   font-weight: normal;
 
 }
+
 .orange-button {
   background-color: #E96040;
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 5px 20px;
+  margin: 5px;
   cursor: pointer;
-  transition: background-color 0.5s; 
+  transition: background-color 0.5s;
   font-size: 18px;
   font-weight: bold;
-  min-width: 200px;
+  min-width: 175px;
 }
 
 .clickable-text {
   color: #E96040;
-  cursor: pointer;  
+  cursor: pointer;
   font-size: smaller;
   margin-top: 5px;
   font-weight: semi-bold;
@@ -76,11 +99,10 @@ h3 {
   border-color: black;
   border-width: 1px;
   border-radius: 5px;
-  min-width: 350px;
+  min-width: 290px;
   color: black;
   padding: 10px;
 }
-
 
 
 .checkboxes {
@@ -88,10 +110,20 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} 
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
 
 .checkbox-item {
-  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  width: 75%;
+}
+
+.checkbox-item input {
+  margin-right: 10px;
 }
 
 .orangeText {
@@ -167,31 +199,27 @@ h3 {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
+.Home {
+  
+}
 .Home,
 .Favorites {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .content {
   max-width: 600px;
   width: 100%;
-  padding: 20px;
+
 }
 
-.restaurant-container,
-.dish-container {
+.button-center {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
+  justify-content: center;
+  align-items: center;
 
-.restaurant-item,
-.dish-item {
-  text-align: center;
 }
 
 .restaurant-item img,
@@ -199,43 +227,62 @@ h3 {
   width: 250px;
   height: auto;
 }
+
 .Home .orange-dropdown {
-  padding: 10px;
-  border: 1px solid #E96040;
-  border-radius: 5px;
-  color: white;
-  background-color: #E96040;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
-
-
-}
-.Home .search-bar {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 5px;
+  background-color: #E96040;
+  color: white;
   border: 1px solid #E96040;
+  margin: 3px;
   border-radius: 5px;
+  width: 100%;
+}
+
+.Home .orange-dropdown option {
+  background-color:white;
+  color:black;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.restaurant-container, .dish-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.restaurant-item, .dish-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  min-width: 250px;
 }
 
 .Home .dropdown-section {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  font: 15px;
 }
+
 .FavButton {
   background-color: #E96040;
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 10px 175px;
-  margin: 40px 60px;
+  margin: 10px 10px;
   cursor: pointer;
   transition: background-color 0.5s;
   font-size: 18px;
   font-weight: bold;
-  min-width: 200px;
+  min-width: 100px;
+  width: calc(100% - 40px);
+  padding: 5px;
+  display: block;
 }
+
 h4 {
   margin-top: 0px;
   color: #E96040;
@@ -244,6 +291,7 @@ h4 {
   margin: 0px;
 
 }
+
 .Home p {
   font-weight: normal;
   font-size: 22px;
@@ -252,6 +300,7 @@ h4 {
   color: black;
   text-align: left;
 }
+
 .Favorites p {
   font-weight: normal;
   font-size: 22px;
@@ -324,6 +373,7 @@ h4 {
   flex: 1;
   margin: 0 10px;
 }
+
 .MyDiningGroups {
   display: flex;
   justify-content: center;

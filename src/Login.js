@@ -11,9 +11,9 @@ function LoginScreen({ onNavigate }) {
                 <h1>Login</h1>
                 <input type="text" placeholder="Username" className="signup" />
                 <input type="text" placeholder="Password" className="signup" />
-                <button onClick={() => onNavigate('Login')} className="orange-button">Login</button>
-                <p className="clickable-text" onClick={() => onNavigate('NewUser')}>Don't have an account? Sign up now</p>
+                <button onClick={() => onNavigate('Home')} className="orange-button">Login</button>
                 <button onClick={() => onNavigate('Screens')} className="orange-button">Back</button>
+                <p className="clickable-text" onClick={() => onNavigate('NewUser')}>Don't have an account? Sign up now</p>
 
             </header>
         </div>
@@ -21,3 +21,4 @@ function LoginScreen({ onNavigate }) {
 }
 
 export default LoginScreen;
+ 

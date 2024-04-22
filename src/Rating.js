@@ -5,7 +5,7 @@ function Rating({ onNavigate }) {
   const [preferenceMet, setPreferenceMet] = useState('yes');
   const [unmetPreferences, setUnmetPreferences] = useState([]);
   const [ratings, setRatings] = useState({
-    overallVibe: 0,
+    vibe: 0,
     pricing: 0,
     accommodation: 0,
     distance: 0,
@@ -92,7 +92,7 @@ function Rating({ onNavigate }) {
           </div>
         )}
         <div className="rating-sections">
-          {['overallVibe', 'pricing', 'accommodation', 'distance', 'groupDining'].map((aspect) => (
+          {['vibe', 'pricing', 'accommodation', 'distance', 'groupDining'].map((aspect) => (
             <div key={aspect} className="rating-section">
               <p>{aspect.charAt(0).toUpperCase() + aspect.slice(1)}</p>
               <div className="star-rating">
@@ -137,7 +137,7 @@ function Rating({ onNavigate }) {
             Save to favorites?
           </label>
         </div>
-        <button type="button" className="submit-button" onClick={handleSubmit}>
+        <button type="button" className="orange-button" onClick={handleSubmit}>
           Submit
         </button>
       </div>
